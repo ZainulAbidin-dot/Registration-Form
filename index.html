@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stye.css" />
+    <script
+      src="https://kit.fontawesome.com/8dd7d264aa.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Registration</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Registration</h1>
+      <form action="/">
+        <hr />
+        <div class="profession-type">
+          <h3>Experience</h3>
+          <input
+            type="radio"
+            value="none"
+            id="radioOne"
+            name="professional"
+            checked
+          />
+          <label for="radioOne" class="radio">Beginner</label>
+          <input type="radio" value="none" id="radioTwo" name="professional" />
+          <label for="radioTwo" class="radio">Intermediate</label>
+          <input type="radio" value="none" id="radioTwo" name="professional" />
+          <label for="radioTwo" class="radio">Professional</label>
+        </div>
+        <hr />
+        <div class="gender">
+          <div class="sub-container">
+            <h3>Gender</h3>
+            <select name="Gender" id="Gender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <hr />
+        <div class="content">
+          <div class="content-input">
+            <label id="icon" for="name"
+              ><i class="fas fa-envelope sizes"></i
+            ></label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div class="content-input">
+            <label id="icon" for="name"
+              ><i class="fas fa-user sizes"></i
+            ></label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              required
+            />
+          </div>
+          <div class="content-input">
+            <label id="icon" for="name"
+              ><i class="fas fa-unlock-alt sizes"></i
+            ></label>
+            <input
+              type="password"
+              name="name"
+              id="name"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="content-input">
+            <label for="review"><h4>Describe Yourself:</h4></label>
+
+            <textarea
+              id="review"
+              name="review"
+              rows="4"
+              cols="50"
+              placeholder="Words limit is 300..."
+            ></textarea>
+          </div>
+        </div>
+        <hr />
+        <div class="btn-block">
+          <p>
+            By clicking Register, you agree to our<br />
+            <a href="https://www.google.com">Web-Engineering Policy</a>
+          </p>
+          <button type="submit" href="/">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
